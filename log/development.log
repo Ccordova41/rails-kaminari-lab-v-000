@@ -3736,3 +3736,11 @@ Processing by SongsController#index as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 6]]
   Rendered songs/index.html.erb within layouts/application (164.9ms)
 Completed 200 OK in 373ms (Views: 363.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/songs" for 68.199.60.101 at 2017-11-28 18:41:24 +0000
+Cannot render console from 68.199.60.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (4.6ms)[0m  [1mSELECT  "songs".* FROM "songs"  ORDER BY "songs"."created_at" DESC LIMIT 20 OFFSET 0[0m
+  Rendered songs/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 32ms (Views: 23.5ms | ActiveRecord: 4.9ms)
